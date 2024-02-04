@@ -33,12 +33,17 @@
 
     <div id="map"></div>
 
-    <div id="displayMoreUserData"></div>
+    <div id="displayMoreUserData">
+        <h3>More information about you</h3>
+    </div>
     <p id="time"></p>
     
     <div id="message">
         <p>Hi. i m living in portugal this api "https://api.postalpincode.in/pincode/${pincode}"<br>
-        did not work here when i  check in console this is the error i get (script.js:107 No records found or API error)  May be its use case restricted to india only please confirm me .. thanks.</p>
+        did not work here when i  check in console this is the error<br>
+        0
+        : 
+        Message: 'No records found', Status: 'Error', PostOffice: null<br> i get because the length was 0 so it excute the else block .. so i donot have access to explore the object to get key value pairs and i m unable to do this task .  i try also  pass postal without converting it into numeric const pincode = data.postal;it throw error 404.. May be its use case restricted to india only please confirm me .. thanks.</p>
     </div>
 </div>
 

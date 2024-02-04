@@ -12,7 +12,7 @@ let map;
                 console.error(error);
             }
         }
-        getUserIP()
+       
         function getAPIInfo() {
             document.querySelector('.home-container').style.display = 'none';
             document.querySelector('#display-btn').style.display = 'none';
@@ -33,7 +33,8 @@ let map;
                         const org = data.org ;
                         const latitude = parseFloat(data.latitude);
                         const longitude = parseFloat(data.longitude);
-                        const currency = data.currency; 
+                        const currency = data.currency;
+                        // const pincode = data.postal; 
                         const pincode = parseInt(data.postal);
                         getPostOffices(pincode);
                         initMap(latitude, longitude);
@@ -94,16 +95,16 @@ let map;
         }
        
 
-
+  
         async function getPostOffices(pincode) {
             const apiUrl = `https://api.postalpincode.in/pincode/${pincode}`;
             
             try {
                 let fetchData = await fetch(apiUrl);
                 let response = await fetchData.json();
-                
+                console.log(response)
                 if (response && response[0].Status === 'Success') {
-                    const postOffices = response[0].PostOffice;
+                    
                 } else {
                     console.error('No records found or API error');
                 }

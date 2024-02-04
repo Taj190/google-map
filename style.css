@@ -26,6 +26,9 @@
     font-size: 20px;
     
 }
+h3{
+    padding: 10px;
+}
 #display-ip{
     font-size: 40px;
     
@@ -64,5 +67,5 @@ border-radius: 25px;
 #message{
     display: none;
     color: aliceblue;
-    font-size: 22px;
+    font-size: 16px;
 }
