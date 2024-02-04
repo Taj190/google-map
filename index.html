@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Map</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="home-container">
+
+        <div class="left-div">
+            <h2>Post Office Application</h2>
+            <p>This Application Allows you to extract information about <br>
+                the nearest Post Offices, based on your location.</p>
+                <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2020/12/postoffice1.jpg" alt="" width="60%"  height="40%">
+        </div>
+
+        <div class="right-div">
+            <p id="display-ip" ></p>
+            <button onclick="getAPIInfo()" id="display-btn">Get Started</button>
+        </div>
+
+    </div>
+    
+<div id="info">
+  <div class="user-info">
+    <p id="display-ip-2" ></p>
+  </div>
+
+     <table id="displayUserData">
+     </table>
+
+    <div id="map"></div>
+
+    <div id="displayMoreUserData"></div>
+    <p id="time"></p>
+    
+    <div id="message">
+        <p>Hi. i m living in portugal this api "https://api.postalpincode.in/pincode/${pincode}"<br>
+        did not work here when i  check in console this is the error i get (script.js:107 No records found or API error)  May be its use case restricted to india only please confirm me .. thanks.</p>
+    </div>
+</div>
+
+
+    
+
+ <script src="./script.js"></script>
+ 
+
+
+</body>
+</html>
